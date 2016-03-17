@@ -448,7 +448,7 @@ class Link extends ComponentUrl
     super
 
   shouldIgnore: ->
-    @crossOrigin() or
+    # @crossOrigin() or
       @_anchored() or
       @_nonHtml() or
       @_optOut() or
