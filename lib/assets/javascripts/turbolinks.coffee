@@ -409,6 +409,7 @@ class ComponentUrl
   hasNoHash: -> @hash.length is 0
 
   crossOrigin: ->
+    false
     @origin isnt (new ComponentUrl).origin
 
   formatForXHR: (options = {}) ->
